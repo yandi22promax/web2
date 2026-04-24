@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Zhend Bria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-text">
+      <span>Z</span><span>H</span><span>E</span><span>N</span><span>D</span>
+    </div>
+    <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+  </div>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">ZB<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">Tentang</a></li>
+      <li><a href="#skills" class="nav-link">Keahlian</a></li>
+      <li><a href="#projects" class="nav-link">Proyek</a></li>
+      <li><a href="#contact" class="nav-link">Kontak</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contact" class="btn-nav">Hubungi Saya</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">Tentang</a></li>
+      <li><a href="#skills" class="mob-link">Keahlian</a></li>
+      <li><a href="#projects" class="mob-link">Proyek</a></li>
+      <li><a href="#contact" class="mob-link">Kontak</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="tag-dot"></span> Tersedia untuk Proyek Baru
+      </div>
+      <h1 class="hero-title reveal">
+        <span class="line">Zhend</span>
+        <span class="line accent-line">Bria<span class="accent">.</span></span>
+      </h1>
+      <p class="hero-sub reveal">
+        UI/UX Designer & Full-Stack Developer<br>
+        <em>yang membangun pengalaman digital berkesan</em>
+      </p>
+      <div class="hero-btns reveal">
+        <a href="#projects" class="btn-primary">Lihat Karya</a>
+        <a href="#about" class="btn-ghost">Tentang Saya ↓</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+    <div class="hero-stats">
+      <div class="stat reveal-right">
+        <span class="stat-num" data-target="47">0</span>+
+        <span class="stat-label">Proyek Selesai</span>
+      </div>
+      <div class="stat reveal-right" style="animation-delay:.1s">
+        <span class="stat-num" data-target="5">0</span>+
+        <span class="stat-label">Tahun Pengalaman</span>
+      </div>
+      <div class="stat reveal-right" style="animation-delay:.2s">
+        <span class="stat-num" data-target="30">0</span>+
+        <span class="stat-label">Klien Puas</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal">// 01 Tentang Saya</div>
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <div class="about-img-card">
+            <div class="img-placeholder">
+              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="80" r="45" fill="#a8ff78" opacity=".3"/>
+                <ellipse cx="100" cy="170" rx="70" ry="40" fill="#a8ff78" opacity=".2"/>
+                <circle cx="100" cy="80" r="38" fill="#a8ff78" opacity=".5"/>
+                <text x="100" y="88" text-anchor="middle" font-size="40" fill="#0a0a0a">ZB</text>
+              </svg>
+            </div>
+            <div class="img-badge">
+              <span>📍</span> Surakarta, Indonesia
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="reveal">Saya menciptakan<br><span class="highlight">solusi digital</span><br>yang bermakna.</h2>
+          <p class="reveal">Halo! Saya Zhend, seorang pengembang & desainer berbasis di Surakarta. Saya memiliki semangat dalam membangun antarmuka yang indah dan fungsional yang memberikan pengalaman luar biasa bagi pengguna.</p>
+          <p class="reveal">Dengan lebih dari 5 tahun pengalaman, saya telah bekerja bersama startup, agensi kreatif, dan perusahaan teknologi untuk menghadirkan produk digital berkualitas tinggi.</p>
+          <div class="about-info reveal">
+            <div class="info-item"><span class="info-label">Nama</span><span>Zhend Bria</span></div>
+            <div class="info-item"><span class="info-label">Tanggal Lahir</span><span>14 Februari 1998</span></div>
+            <div class="info-item"><span class="info-label">Email</span><span>zhendbria@email.com</span></div>
+            <div class="info-item"><span class="info-label">Status</span><span class="available">● Tersedia</span></div>
+          </div>
+          <a href="#" class="btn-primary reveal">Unduh CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">// 02 Keahlian</div>
+      <h2 class="section-title reveal">Apa yang Saya<br><span class="highlight">Kuasai</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal" data-delay="0">
+          <div class="skill-icon">⚡</div>
+          <h3>Frontend Dev</h3>
+          <p>React, Vue, HTML/CSS, TypeScript, Tailwind CSS, animasi canggih</p>
+          <div class="skill-tags">
+            <span>React</span><span>Vue</span><span>TypeScript</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" data-delay="100">
+          <div class="skill-icon">🛠</div>
+          <h3>Backend Dev</h3>
+          <p>Node.js, Laravel, REST API, GraphQL, database design</p>
+          <div class="skill-tags">
+            <span>Node.js</span><span>Laravel</span><span>MySQL</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" data-delay="200">
+          <div class="skill-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Figma, desain sistem, wireframing, prototyping, riset pengguna</p>
+          <div class="skill-tags">
+            <span>Figma</span><span>Prototyping</span><span>Design System</span>
+          </div>
+        </div>
+        <div class="skill-card reveal" data-delay="300">
+          <div class="skill-icon">☁️</div>
+          <h3>DevOps & Cloud</h3>
+          <p>Docker, CI/CD, AWS, deployment & infrastructure management</p>
+          <div class="skill-tags">
+            <span>Docker</span><span>AWS</span><span>CI/CD</span>
+          </div>
+        </div>
+      </div>
+      <div class="tech-marquee">
+        <div class="marquee-track">
+          <span>React</span><span>·</span><span>Vue.js</span><span>·</span><span>Node.js</span><span>·</span>
+          <span>TypeScript</span><span>·</span><span>Laravel</span><span>·</span><span>Figma</span><span>·</span>
+          <span>Docker</span><span>·</span><span>AWS</span><span>·</span><span>MySQL</span><span>·</span>
+          <span>MongoDB</span><span>·</span><span>Tailwind</span><span>·</span><span>GraphQL</span><span>·</span>
+          <span>React</span><span>·</span><span>Vue.js</span><span>·</span><span>Node.js</span><span>·</span>
+          <span>TypeScript</span><span>·</span><span>Laravel</span><span>·</span><span>Figma</span><span>·</span>
+          <span>Docker</span><span>·</span><span>AWS</span><span>·</span><span>MySQL</span><span>·</span>
+          <span>MongoDB</span><span>·</span><span>Tailwind</span><span>·</span><span>GraphQL</span><span>·</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">// 03 Proyek</div>
+      <h2 class="section-title reveal">Karya Terbaik<br><span class="highlight">Saya</span></h2>
+      <div class="projects-grid">
+        <div class="project-card big reveal">
+          <div class="project-img" style="background:linear-gradient(135deg,#a8ff78,#78ffd6)">
+            <div class="project-img-inner">
+              <span>🛒</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>E-Commerce</span><span>React</span><span>Node.js</span></div>
+            <h3>ShopNova Platform</h3>
+            <p>Platform e-commerce modern dengan fitur AI rekomendasi produk, payment gateway, dan dashboard analytics real-time.</p>
+            <div class="project-links">
+              <a href="#" class="link-demo">Live Demo ↗</a>
+              <a href="#" class="link-code">GitHub →</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-delay="100">
+          <div class="project-img" style="background:linear-gradient(135deg,#667eea,#764ba2)">
+            <div class="project-img-inner"><span>📊</span></div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Dashboard</span><span>Vue</span></div>
+            <h3>DataViz Dashboard</h3>
+            <p>Dashboard analitik interaktif dengan visualisasi data real-time.</p>
+            <div class="project-links">
+              <a href="#" class="link-demo">Demo ↗</a>
+              <a href="#" class="link-code">Code →</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-delay="200">
+          <div class="project-img" style="background:linear-gradient(135deg,#f093fb,#f5576c)">
+            <div class="project-img-inner"><span>💬</span></div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Chat App</span><span>Socket.io</span></div>
+            <h3>ChatterBox</h3>
+            <p>Aplikasi chat real-time dengan enkripsi end-to-end dan fitur grup.</p>
+            <div class="project-links">
+              <a href="#" class="link-demo">Demo ↗</a>
+              <a href="#" class="link-code">Code →</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card reveal" data-delay="300">
+          <div class="project-img" style="background:linear-gradient(135deg,#4facfe,#00f2fe)">
+            <div class="project-img-inner"><span>🎵</span></div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Music App</span><span>React Native</span></div>
+            <h3>SoundWave</h3>
+            <p>Aplikasi streaming musik dengan rekomendasi berbasis AI dan visualizer audio.</p>
+            <div class="project-links">
+              <a href="#" class="link-demo">Demo ↗</a>
+              <a href="#" class="link-code">Code →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">// 04 Kontak</div>
+      <h2 class="section-title reveal">Mari Berkolaborasi<span class="accent">.</span></h2>
+      <p class="contact-sub reveal">Punya proyek atau ide menarik? Saya selalu terbuka untuk diskusi dan peluang baru.</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="c-icon">📧</div>
+            <div>
+              <span class="c-label">Email</span>
+              <a href="mailto:zhendbria@email.com">zhendbria@email.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon">📱</div>
+            <div>
+              <span class="c-label">WhatsApp</span>
+              <a href="#">+62 812-3456-7890</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="c-icon">🌐</div>
+            <div>
+              <span class="c-label">LinkedIn</span>
+              <a href="#">linkedin.com/in/zhendbria</a>
+            </div>
+          </div>
+          <div class="socials">
+            <a href="#" class="social-btn">GitHub</a>
+            <a href="#" class="social-btn">Instagram</a>
+            <a href="#" class="social-btn">LinkedIn</a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder=" " required />
+            <label for="name">Nama Lengkap</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder=" " required />
+            <label for="email">Alamat Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Pesan Anda</label>
+          </div>
+          <button type="submit" class="btn-primary full-w">
+            <span class="btn-text">Kirim Pesan</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Pesan terkirim! Saya akan segera menghubungi Anda.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">ZB<span class="dot">.</span></div>
+        <p>© 2025 Zhend Bria. Dibuat dengan ❤️ di Surakarta.</p>
+        <a href="#home" class="back-top">↑ Kembali ke Atas</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
